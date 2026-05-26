@@ -1,3 +1,4 @@
+
  body{
                 background: linear-gradient(
                     135deg,
@@ -165,4 +166,172 @@
             }
             h1,h2,h3,h4,h5,h6,p,label,a{
     color: rgb(165, 201, 233);
+ body{
+                background: linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #111827,
+                    #1e1b4b
+                );
+            }
+            .intro{
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(
+                135deg,
+                rgba(59,130,246,0.18),
+                rgba(139,92,246,0.18)
+            );
+                width: 660px;
+                height: 350px;
+                align-items: flex-start;
+                border: 3px solid black;
+                border-radius: 40px;
+                margin-left: 70px;
+                margin-top: -100px;
+            }
+                    .logo h1,
+            .logo h4{
+                margin: 0;
+            }
+            .headDeclaration{
+                margin-left: 60px;
+                font-size: 22px;
+            }
+            .declaration{
+                margin-left: 45px;
+                font-size: 17px;
+                margin-top: 0px;
+                font-weight: normal;
+            }
+            .features{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                width: 450px;
+                margin-left: 52px;
+            }
+            .box{
+                background-color: rgb(17, 42, 92);
+                height:40px;
+                width: 250px;
+                text-align: center;
+                align-content: center;
+                border: 1px solid red;
+                border-radius: 9px;
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+                margin-left: 40px;
+            }
+            .mainContainer{
+                display: flex;
+                gap:60px;
+                align-items: center;
+                margin-left: 70px;
+                margin-top: 80px;
+            }
+            .loginbox{
+                display: flex;
+                flex-direction: column;
+                 background: linear-gradient(
+                    135deg,
+                    rgba(59,130,246,0.18),
+                    rgba(139,92,246,0.18)
+                );
+                width: 450px;
+                height: 550px;
+                align-items: center;
+                border: 3px solid black;
+                border-radius: 40px;
+                margin-left: 70px;
+                margin-top: -100px;
+            }
+            .email{
+                height: 40px;
+                width: 300px;
+                 border: 1px solid rgb(89, 38, 99);
+                border-radius: 12px;
+                background-color: black;
+                padding-left: 15px;
+            }
+            .password{
+                height: 40px;
+                width: 300px;
+                border: 1px solid rgb(89, 38, 99);
+                border-radius: 12px;
+                background-color: black;
+                padding-left: 15px;
+            }
+            .loginbox input{
+                color: rgb(176, 201, 227);
+                background-color: #1e1e1e;
+                border: 1px solid rgb(89, 38, 99);
+            }
+            .loginbox p{
+                align-self: flex-start;
+                margin-left: 70px;
+                margin-bottom: 5px;
+            }
+            .login{
+                margin-top: 25px;
+                height: 45px;
+                width: 320px;
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            input::placeholder{
+                color: rgb(180,180,180);
+            }
+            .login:hover{
+                transform: scale(1.03);
+                background-color: rgb(118, 43, 188);
+            }
+            .logoImage{
+                width: 120px;
+                height: 120px;
+                box-shadow: 0px 0px 20px cyan;
+                border-radius: 50%;
+            }
+            .forgotPassword{
+                margin-top: 12px;
+                margin-left: 190px;
+
+                text-decoration: none;
+                color: blueviolet;
+
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .forgotPassword:hover{
+                text-decoration: underline;
+            }
+            .rememberSection{
+                display: flex;
+                align-items: center;
+
+                gap: 8px;
+
+                margin-top: 15px;
+                margin-right: 150px;
+            }
+            .rememberSection input{
+                width: 16px;
+                height: 16px;
+
+                cursor: pointer;
+            }
+            .rememberSection label{
+                font-size: 14px;
+            }
+            h1,h2,h3,h4,h5,h6,p,label,a{
+    color: rgb(165, 201, 233);
+            }
 }
