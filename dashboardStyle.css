@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    background-color: #131a2d ;
+    color: white;
+    font-family: Arial;
+}
+.mainContainer{
+    display: flex;
+    background-color: rgb(40, 32, 21);
+    
+}
+.sidebar{
+   width: 240px;
+    height: 200vh;
+   background: linear-gradient(
+    180deg,
+    #0f172a,
+    #111827,
+    #1e293b
+);
+    padding: 20px;
+}
+.navbar{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.content{
+       background: linear-gradient(
+        135deg,
+        #050816,
+        #0b1f3a,
+        #071426
+    );
+   flex: 1;
+   padding: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: #03144c;
+
+    height: 140px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgb(0, 255, 255);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 15px rgba(0,255,255,0.2);
+}
+.card:hover{
+    transform: translateY(-5px);
+
+    box-shadow: 0px 0px 25px rgba(0,255,255,0.4);
+}
+
+.card h2{
+    margin: 0;
+
+    font-size: 38px;
+
+    color: cyan;
+}
+
+.card p{
+    color: rgb(180,180,180);
+}
+.navbarButton{
+    display: flex;
+    background-color: rgb(9, 15, 43);
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0,255,255,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbarButton:hover{
+    background-color: #13235c;
+
+    transform: translateX(5px);
+
+    box-shadow: 0px 0px 20px cyan;
+}
+
+.logo{
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+.logoImage{
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 15px cyan;
+}
+.logo h2,
+.logo h6{
+    margin: 10px;
+}
+.description h1,
+.description h4{
+    margin: 2px;
+}
+.clockContainer{
+    margin-top: 20px;
+}
+
+#clock{
+    color: cyan;
+
+    font-size: 30px;
+
+    margin: 0;
+}
+.alertBox{
+
+    margin-top: 30px;
+
+    background-color: #03144c;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid cyan;
+
+    font-size: 18px;
+
+    box-shadow: 0px 0px 15px rgba(0,255,255,0.2);
+}
+
+.deviceSection{
+
+    margin-top: 40px;
+
+    background-color: #03144c;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 15px rgba(0,255,255,0.2);
+}
+.deviceTable{
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+.deviceTable th,
+.deviceTable td{
+
+    padding: 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.deviceTable th{
+
+    color: cyan;
+}
+
+.online{
+
+    color: lime;
+
+    font-weight: bold;
+}
+
+.offline{
+
+    color: red;
+
+    font-weight: bold;
+}
+
+.deviceSection{
+    display: none;
+}

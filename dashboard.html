@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NetPulse Dashboard</title>
+     <link rel="stylesheet" href="dashboardStyle.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+ <div class="sidebar">
+      <div class="logo">
+
+    <img src="SNMS.png" class="logoImage">
+
+    <div>
+        <h2>NetPulse</h2>
+        <h6>NOC Dashboard</h6>
+    </div>
+
+</div>
+        <div class="navbar">
+            <p class="navbarButton">Dashboard</p>
+            <p class="navbarButton" id="devicesBtn">Devices</p>
+            <p class="navbarButton">Network Map</p>
+            <p class="navbarButton">Analytics</p>
+            <p class="navbarButton">Settings</p>
+        </div>
+        </div>
+        <div class="content">
+            <div class="description">
+                <h1>Network Operations Center</h1>
+                <h4>Real-time monitoring and analytics</h4>
+                <div class="clockContainer">
+                <h2 id="clock">00:00:00</h2>
+             </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h2 id="totalDevices">20</h2>
+                    <p>Total devices</p>
+                </div>
+                <div class="card">
+                    <h2 id="activeDevices">13</h2>
+                    <p>Active devices</p>
+                </div>
+                <div class="card">
+                    <h2 id="offlineDevices">7</h2>
+                    <p>Offline devices</p>
+                </div>
+                <div class="card">
+                    <h2 id="networkHealth">98%</h2>
+                    <p>Network Health</p>
+                </div>
+                <div class="card">
+                    <h2 id="latency">12ms</h2>
+                    <p>Avg Latency</p>
+                </div>
+                <div class="card">
+                    <h2 id="traffic">1.2TB</h2>
+                    <p>Traffic Usage</p>
+                </div>
+            </div>
+            <div class="alertBox" id="alertBox">
+                Network Status Normal
+            </div>
+            <div class="deviceSection" id="deviceSection">
+
+    <h2>Connected Devices</h2>
+
+    <table class="deviceTable">
+
+        <thead>
+
+            <tr>
+                <th>Device</th>
+                <th>Status</th>
+                <th>IP Address</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="deviceBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+        </div>
+    </div>
+   <script src="dashboardScript.js"></script>
+</body>
+</html>
